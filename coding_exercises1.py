@@ -1,24 +1,4 @@
-"""
-Coding Exercise 4 - Integer division
-You have a shop selling buns for $2.40 each.
-A customer comes in with $15, and would like to buy as many buns as possible.
-Complete the code to calculate how many buns the customer can afford.
-"""
-bun_price = 2.40
-money = 15
-print(money // bun_price)
 
-
-"""
-Coding Exercise 3 - Printing tabs
-Write a program that will produce the following output.
-All the text should appear in your program's output.
-
-Number 1    The Larch
-Number 2    The Horse Chestnut
-"""
-print("Number 1\tThe Larch")
-print("Number 2\tThe Horse Chestnut")
 
 """
 Coding Exercise 1 - Printing text
@@ -37,23 +17,95 @@ print(6 * 7)
 
 
 """
-Coding Exercise 12 - Augmented assignment in a loop
-Early computers could only perform addition.
-In order to multiply one number by another, they performed repeated addition.
-For example, 5 * 8 was performed by adding 5 eight times
+Coding Exercise 3 - Printing tabs
+Write a program that will produce the following output.
+All the text should appear in your program's output.
 
-5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 40.
-Use a for loop, and augmented assignment,
-to give answer the result of multiplying number by multiplier.
+Number 1    The Larch
+Number 2    The Horse Chestnut
 """
-number = 5
-multiplier = 8
-answer = 0
+print("Number 1\tThe Larch")
+print("Number 2\tThe Horse Chestnut")
 
-for i in range(multiplier):
-    answer += number
 
-print(answer)
+"""
+Coding Exercise 4 - Integer division
+You have a shop selling buns for $2.40 each.
+A customer comes in with $15, and would like to buy as many buns as possible.
+Complete the code to calculate how many buns the customer can afford.
+"""
+bun_price = 2.40
+money = 15
+print(money // bun_price)
+
+
+"""
+Coding Exercise 5 - Using if with strings
+Write a small program that assigns the name of 2 trees to 2 variables, called tree1 and tree 2.
+If the values of the 2 variables are equal
+print the message 'The trees are the same',
+otherwise print 'The trees are different'.
+"""
+tree1 = 'put your first tree name here'
+tree2 = 'put your second tree name here'
+
+if tree1 == tree2:
+    print("The trees are the same")
+else:
+    print("The trees are different")
+
+
+
+
+"""
+Coding Exercise 6 - Simple condition
+Write a small program that assigns the value 5 to one variable,
+called x, and the value 7 to another, called y.
+
+Your program should then use an if statement to compare the values,
+and print out 'x is greater than y' if x is greater,
+or 'x is smaller than y' if y is greater.
+If x equals y, print out 'x equals y'
+"""
+x = 5
+y = 7
+
+if x > y:
+    print("x is greater than y")
+elif x < y:
+    print("x is smaller than y")
+else:
+    print("x equals y")
+
+
+"""
+Coding Exercise 8 - Extracting capitals
+Write a program to print out the capital letters in the string
+
+"Alright, but apart from the Sanitation, the Medicine, Education,
+Wine, Public Order, Irrigation, Roads, the Fresh-Water System,
+and Public Health, what have the Romans ever done for us?"
+"""
+quote = """
+Alright, but apart from the Sanitation, the Medicine, Education, Wine,
+Public Order, Irrigation, Roads, the Fresh-Water System,
+and Public Health, what have the Romans ever done for us?
+"""
+for i in quote:
+    if i.istitle():
+        print(i)
+
+
+
+"""
+Coding Exercise 9 - For loop with step
+Write a program to print out all the numbers from 0 to 100 that are divisible by 7.
+Note that zero is considered to be divisible by all other integers, so your output should include zero.
+"""
+for i in range(0, 101, 7):
+    if i % 7 == 0:
+        print(i)
+
 
 
 
@@ -87,35 +139,25 @@ for i in range(0, 21):
         print(i)
 
 
-
-
 """
-Coding Exercise 8 - Extracting capitals
-Write a program to print out the capital letters in the string
+Coding Exercise 12 - Augmented assignment in a loop
+Early computers could only perform addition.
+In order to multiply one number by another, they performed repeated addition.
+For example, 5 * 8 was performed by adding 5 eight times
 
-"Alright, but apart from the Sanitation, the Medicine, Education,
-Wine, Public Order, Irrigation, Roads, the Fresh-Water System,
-and Public Health, what have the Romans ever done for us?"
+5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 40.
+Use a for loop, and augmented assignment,
+to give answer the result of multiplying number by multiplier.
 """
-quote = """
-Alright, but apart from the Sanitation, the Medicine, Education, Wine,
-Public Order, Irrigation, Roads, the Fresh-Water System,
-and Public Health, what have the Romans ever done for us?
-"""
-for i in quote:
-    if i.istitle():
-        print(i)
+number = 5
+multiplier = 8
+answer = 0
 
+for i in range(multiplier):
+    answer += number
 
+print(answer)
 
-"""
-Coding Exercise 9 - For loop with step
-Write a program to print out all the numbers from 0 to 100 that are divisible by 7.
-Note that zero is considered to be divisible by all other integers, so your output should include zero.
-"""
-for i in range(0, 101, 7):
-    if i % 7 == 0:
-        print(i)
 
 
 """
@@ -177,45 +219,6 @@ for i in ipAddress:
         segment += 1
     else:
         segment_counter += 1
-
-
-
-"""
-Coding Exercise 6 - Simple condition
-Write a small program that assigns the value 5 to one variable,
-called x, and the value 7 to another, called y.
-
-Your program should then use an if statement to compare the values,
-and print out 'x is greater than y' if x is greater,
-or 'x is smaller than y' if y is greater.
-If x equals y, print out 'x equals y'
-"""
-x = 5
-y = 7
-
-if x > y:
-    print("x is greater than y")
-elif x < y:
-    print("x is smaller than y")
-else:
-    print("x equals y")
-
-
-"""
-Coding Exercise 5 - Using if with strings
-Write a small program that assigns the name of 2 trees to 2 variables, called tree1 and tree 2.
-If the values of the 2 variables are equal
-print the message 'The trees are the same',
-otherwise print 'The trees are different'.
-"""
-tree1 = 'put your first tree name here'
-tree2 = 'put your second tree name here'
-
-if tree1 == tree2:
-    print("The trees are the same")
-else:
-    print("The trees are different")
-
 
 
 
